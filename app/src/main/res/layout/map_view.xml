@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/header"
+        layout="@layout/header"/>
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/relative_search"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="45dp"-->
+    <!--android:layout_below="@+id/header"-->
+    <!--android:visibility="visible">-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/locationSearch"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:hint="Search"-->
+    <!--android:textColorHint="@color/Dark_Gray"-->
+    <!--android:textColor="#000000"-->
+    <!--android:textSize="15sp"-->
+    <!--android:gravity="center"-->
+    <!--android:background="@drawable/searchbox_2x"/>-->
+
+
+
+
+    <!--</RelativeLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:layout_below="@+id/header"
+        android:background="#D4D4D8"
+        android:id="@+id/search_layout"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical"
+            android:background="@mipmap/textbox_white"
+
+            >
+            <TextView
+                android:id="@+id/locationSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:layout_toRightOf="@+id/search_button"
+                android:layout_toEndOf="@+id/search_button"
+                android:layout_marginEnd="5dp"
+                android:textSize="10sp"
+
+                android:layout_marginStart="5dp"
+
+
+                android:layout_centerVertical="true"
+                android:hint="Search" />
+
+
+            <ImageView
+                android:id="@+id/search_button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:layout_centerVertical="true"
+                android:onClick="onMapSearch"
+                android:text="Search" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/myLocationButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom|end"
+        android:visibility="gone"
+        android:layout_marginEnd="20dp"
+
+        />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map_frag"
+        android:layout_below="@+id/search_layout"
+        tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:background="@mipmap/bt_grey1"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/txt_save_map"
+        android:text="Save"
+
+        />
+</RelativeLayout>

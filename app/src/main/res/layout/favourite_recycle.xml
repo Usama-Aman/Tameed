@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cart_favourite"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.ConstraintLayout
+        android:id="@+id/constraintLayout_profile_favt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/view31"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/favourite_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/no_thumb" />
+
+    </androidx.constraintlayout.ConstraintLayout>
+
+
+    <androidx.constraintlayout.ConstraintLayout
+        android:id="@+id/constraintLayout_service_provider_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout_profile_favt"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/favourite_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Robert Downey JR."
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginStart="8dp"
+        android:text="استعراضات"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout_profile_favt"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout_service_provider_name" />
+
+    <TextView
+        android:id="@+id/review_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="(1955)"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toEndOf="@+id/textView46"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout_service_provider_name" />
+
+    <ImageView
+        android:id="@+id/review_star1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout_profile_favt"
+        app:layout_constraintTop_toBottomOf="@+id/textView46"
+        app:srcCompat="@drawable/star_active" />
+
+    <ImageView
+        android:id="@+id/review_star2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/review_star1"
+        app:layout_constraintTop_toBottomOf="@+id/textView46"
+        app:srcCompat="@drawable/filled_rating" />
+
+    <ImageView
+        android:id="@+id/review_star3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/review_star2"
+        app:layout_constraintTop_toBottomOf="@+id/textView46"
+        app:srcCompat="@drawable/filled_rating" />
+
+    <ImageView
+        android:id="@+id/favourite_star4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/review_star3"
+        app:layout_constraintTop_toTopOf="@+id/review_star3"
+        app:srcCompat="@drawable/filled_rating" />
+
+    <ImageView
+        android:id="@+id/favourite_star5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        app:layout_constraintStart_toEndOf="@+id/favourite_star4"
+        app:layout_constraintTop_toTopOf="@+id/favourite_star4"
+        app:srcCompat="@drawable/empty_rating" />
+
+    <ImageView
+        android:id="@+id/review_delete"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_trash2" />
+
+    <ImageView
+        android:id="@+id/review_forward"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toStartOf="@+id/review_delete"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_forward" />
+
+    <ImageView
+        android:id="@+id/review_chat"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/review_forward"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_chat" />
+
+    <View
+        android:id="@+id/view31"
+
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="#009788"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/review_star1" />
+</androidx.constraintlayout.ConstraintLayout>

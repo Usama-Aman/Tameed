@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.ConstraintLayout
+        android:id="@+id/constraintLayout_category"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="38dp">
+
+
+        <ImageView
+            android:id="@+id/forward_img5"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_new_left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/forward_img5_sown"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_new_down"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="COMMERCIAL"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/forward_img5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/check_spareall"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/drawable_selector_checkbox"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.ConstraintLayout>
+
+
+    <!--<android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout_category"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/forward_img5"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_new_down"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/forward_img5_sown"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="5dp"
+            android:visibility="invisible"
+            android:src="@drawable/ic_new_left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:text="SPARE PARTS"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/forward_img5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.666" />
+
+
+        <ImageView
+            android:id="@+id/check_spareall"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="294dp"
+            android:src="@drawable/drawable_selector_checkbox"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>-->
+
+    <!--app:layout_constraintTop_toBottomOf="@+id/constraintLayout_category"-->
+    <View
+        android:id="@+id/View_line_one"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout_category"
+        android:background="@android:color/white" />
+
+
+    <androidx.constraintlayout.ConstraintLayout
+        android:id="@+id/constraintLayout_recycler_item_services"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout_category">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/service_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </androidx.constraintlayout.ConstraintLayout>
+
+</androidx.constraintlayout.ConstraintLayout>

@@ -1,0 +1,376 @@
+<resources>
+    <!--<string name="app_name">Tameed</string>-->
+    <string name="app_name">تعميد</string>
+
+
+    <!-- //OLD KEY "tameed.com.tameed PACKAGE NAME"-->
+    <!--<string name="maps_api_key">AIzaSyAFUHkP1hBJn8rMUmDPCwG2jgFw-zq8A7g</string>-->
+
+    <!-- //NEW KEY "com.tameed PACKAGE NAME" jay 007-->
+    <string name="maps_api_key">AIzaSyDoMDDoWAXU7ZC3LxFdLELvyspJLLs9kug</string>
+
+
+    <string name="register">Register Client</string>
+    <string name="my_account_register">إرسال</string>
+    <string name="terms_and_condition">الشروط والأحكام</string>
+
+    <string name="end_of_list">نهاية معاملاتي</string>
+
+    <string name="add_des">In publishing and graphic design, lorem ipsum is a filter text or greeking commonly used to demonstrate  textual element of a graphic document or visiual presentation. </string>
+    <string name="order_approv">Your order has been approved by Service Provider  on 3 Feb 2018.</string>
+
+    <string name="order_request">Congrats! You have new Order Request.</string>
+    <string name="order_accepted">Order has been accepted by you on 3 Feb 2018</string>
+    <!-- <string name="loading">loading...</string>-->
+    <string name="allow_access">Allow Permission To Access Location</string>
+
+    <string name="server_error">خطأ في الخادم</string>
+    <string name="login_error">خطأ في الدخول</string>
+    <string name="please_first_login">يرجى تسجيل الدخول أولا للمضي قدما.</string>
+
+    <string name="authentication_error">خطأ في التأكيد</string>
+    <string name="time_out_error">انتهى الوقت المتاح لتنفيذ المعاملة</string>
+
+    <string name="loading">يرجى الإنتظار..</string>
+    <string name="networkError_Message">خطأ في الشبكة</string>
+    <string name="uploading">تحميل</string>
+
+
+    <string-array name="CountryCodes">
+        <item>+93,AF</item>
+        <item>+355,AL</item>
+        <item>+213,DZ</item>
+        <item>+376,AD</item>
+        <item>+244,AO</item>
+        <item>+672,AQ</item>
+        <item>+54,AR</item>
+        <item>+374,AM</item>
+        <item>+297,AW</item>
+        <item>+61,AU</item>
+        <item>+43,AT</item>
+        <item>+994,AZ</item>
+        <item>+973,BH</item>
+        <item>+880,BD</item>
+        <item>+375,BY</item>
+        <item>+32,BE</item>
+        <item>+501,BZ</item>
+        <item>+229,BJ</item>
+        <item>+975,BT</item>
+        <item>+591,BO</item>
+        <item>+387,BA</item>
+        <item>+267,BW</item>
+        <item>+55,BR</item>
+        <item>+673,BN</item>
+        <item>+359,BG</item>
+        <item>+226,BF</item>
+        <item>+95,MM</item>
+        <item>+257,BI</item>
+        <item>+855,KH</item>
+        <item>+237,CM</item>
+        <item>+1,CA</item>
+        <item>+238,CV</item>
+        <item>+236,CF</item>
+        <item>+235,TD</item>
+        <item>+56,CL</item>
+        <item>+86,CN</item>
+        <item>+61,CX</item>
+        <item>+61,CC</item>
+        <item>+57,CO</item>
+        <item>+269,KM</item>
+        <item>+242,CG</item>
+        <item>+243,CD</item>
+        <item>+682,CK</item>
+        <item>+506,CR</item>
+        <item>+385,HR</item>
+        <item>+53,CU</item>
+        <item>+357,CY</item>
+        <item>+420,CZ</item>
+        <item>+45,DK</item>
+        <item>+253,DJ</item>
+        <item>+670,TL</item>
+        <item>+593,EC</item>
+        <item>+20,EG</item>
+        <item>+503,SV</item>
+        <item>+240,GQ</item>
+        <item>+291,ER</item>
+        <item>+372,EE</item>
+        <item>+251,ET</item>
+        <item>+500,FK</item>
+        <item>+298,FO</item>
+        <item>+679,FJ</item>
+        <item>+358,FI</item>
+        <item>+33,FR</item>
+        <item>+689,PF</item>
+        <item>+241,GA</item>
+        <item>+220,GM</item>
+        <item>+995,GE</item>
+        <item>+49,DE</item>
+        <item>+233,GH</item>
+        <item>+350,GI</item>
+        <item>+30,GR</item>
+        <item>+299,GL</item>
+        <item>+502,GT</item>
+        <item>+224,GN</item>
+        <item>+245,GW</item>
+        <item>+592,GY</item>
+        <item>+509,HT</item>
+        <item>+504,HN</item>
+        <item>+852,HK</item>
+        <item>+36,HU</item>
+        <item>+91,IN</item>
+        <item>+62,ID</item>
+        <item>+98,IR</item>
+        <item>+964,IQ</item>
+        <item>+353,IE</item>
+        <item>+44,IM</item>
+        <item>+972,IL</item>
+        <item>+39,IT</item>
+        <item>+225,CI</item>
+        <item>+81,JP</item>
+        <item>+962,JO</item>
+        <item>+7,KZ</item>
+        <item>+254,KE</item>
+        <item>+686,KI</item>
+        <item>+965,KW</item>
+        <item>+996,KG</item>
+        <item>+856,LA</item>
+        <item>+371,LV</item>
+        <item>+961,LB</item>
+        <item>+266,LS</item>
+        <item>+231,LR</item>
+        <item>+218,LY</item>
+        <item>+423,LI</item>
+        <item>+370,LT</item>
+        <item>+352,LU</item>
+        <item>+853,MO</item>
+        <item>+389,MK</item>
+        <item>+261,MG</item>
+        <item>+265,MW</item>
+        <item>+60,MY</item>
+        <item>+960,MV</item>
+        <item>+223,ML</item>
+        <item>+356,MT</item>
+        <item>+692,MH</item>
+        <item>+222,MR</item>
+        <item>+230,MU</item>
+        <item>+262,YT</item>
+        <item>+52,MX</item>
+        <item>+691,FM</item>
+        <item>+373,MD</item>
+        <item>+377,MC</item>
+        <item>+976,MN</item>
+        <item>+382,ME</item>
+        <item>+212,MA</item>
+        <item>+258,MZ</item>
+        <item>+264,NA</item>
+        <item>+674,NR</item>
+        <item>+977,NP</item>
+        <item>+31,NL</item>
+        <item>+599,AN</item>
+        <item>+687,NC</item>
+        <item>+64,NZ</item>
+        <item>+505,NI</item>
+        <item>+227,NE</item>
+        <item>+234,NG</item>
+        <item>+683,NU</item>
+        <item>+850,KP</item>
+        <item>+47,NO</item>
+        <item>+968,OM</item>
+        <item>+92,PK</item>
+        <item>+680,PW</item>
+        <item>+507,PA</item>
+        <item>+675,PG</item>
+        <item>+595,PY</item>
+        <item>+51,PE</item>
+        <item>+63,PH</item>
+        <item>+870,PN</item>
+        <item>+48,PL</item>
+        <item>+351,PT</item>
+        <item>+1,PR</item>
+        <item>+974,QA</item>
+        <item>+40,RO</item>
+        <item>+7,RU</item>
+        <item>+250,RW</item>
+        <item>+590,BL</item>
+        <item>+685,WS</item>
+        <item>+378,SM</item>
+        <item>+239,ST</item>
+        <item>+966,SA</item>
+        <item>+221,SN</item>
+        <item>+381,RS</item>
+        <item>+248,SC</item>
+        <item>+232,SL</item>
+        <item>+65,SG</item>
+        <item>+421,SK</item>
+        <item>+386,SI</item>
+        <item>+677,SB</item>
+        <item>+252,SO</item>
+        <item>+27,ZA</item>
+        <item>+82,KR</item>
+        <item>+34,ES</item>
+        <item>+94,LK</item>
+        <item>+290,SH</item>
+        <item>+508,PM</item>
+        <item>+249,SD</item>
+        <item>+597,SR</item>
+        <item>+268,SZ</item>
+        <item>+46,SE</item>
+        <item>+41,CH</item>
+        <item>+963,SY</item>
+        <item>+886,TW</item>
+        <item>+992,TJ</item>
+        <item>+255,TZ</item>
+        <item>+66,TH</item>
+        <item>+228,TG</item>
+        <item>+690,TK</item>
+        <item>+676,TO</item>
+        <item>+216,TN</item>
+        <item>+90,TR</item>
+        <item>+993,TM</item>
+        <item>+688,TV</item>
+        <item>+971,AE</item>
+        <item>+256,UG</item>
+        <item>+44,GB</item>
+        <item>+380,UA</item>
+        <item>+598,UY</item>
+        <item>+1,US</item>
+        <item>+998,UZ</item>
+        <item>+678,VU</item>
+        <item>+39,VA</item>
+        <item>+58,VE</item>
+        <item>+84,VN</item>
+        <item>+681,WF</item>
+        <item>+967,YE</item>
+        <item>+260,ZM</item>
+        <item>+263,ZW</item>
+    </string-array>
+
+    <string name="enter_valid_month">You have Selected Future Date</string>
+    <string name="ok">حسنا</string>
+    <string name="Cancel">إلغاء</string>
+    <string name="select_Bank_account_for_spinner">Select Iban</string>
+    <string name="select_months">اختر الشهر‎</string>
+    <string name="Status_Cancelled">ملغي</string>
+
+
+    <string name="attachments">مرفقات :</string>
+    <string name="Real">ريال</string>
+    <string name="the_amount">المبلغ : </string>
+    <string name="transferred_from">الحساب المحول منه :</string>
+    <string name="transferred_from_lable">الحساب المحول منه </string>
+    <string name="bank_account">اختر الحساب المحول اليه :</string>
+
+
+    <string name="complete_order">تم انجاز المعاملة</string>
+    <string name="cancel_order">إلغاء</string>
+    <string name="enter_from_bank_account">يرجى إدخال الحساب المحول منه</string>
+
+    <!--//complate cust details screen-->
+    <string name="str_Paid">مدفوع</string>
+    <string name="str_Unpaid">غير مدفوع</string>
+
+
+    <!--<string name="Date_time_of_service">تاريخ / وقت الخدمة</string>-->
+    <string name="Date_time_of_service">تاريخ/وقت ) انجاز المعاملة)</string>
+    <string name="There_are_no_providers">لا يوجد مزودين</string>
+    <!--<string name="There_are_no_providers">لاتوجد معاملةات</string>-->
+
+    <string name="tv_days_warranty">مدة التعميد</string>
+    <string name="tv_service_charges">قيمة المعادلة</string>
+    <string name="msg_entered_wrong_otp">عزيزي العميل لقد ادخلت رقم خاطئ</string>
+    <string name="tv_general_office">المكتب العام</string>
+    <string name="tv_duration_of_baptism">مدة التعميد (ايام)</string>
+
+    <string name="title_payment_success">ناجح</string>
+    <string name="msg_payment_success">تم الدفع يرجى الضغط على "موافق" للمضي قدمً</string>
+    <string name="title_payment_failed">فشل</string>
+    <string name="msg_payment_failed">فشل الدفع يرجى إعادة المستأجر في هذا المجال</string>
+
+    <string name="msg_transaction_successful">تم رفع صورة الإيصال بنجاح</string>
+    <string name="msg_something_went_wrong">هناك خطأ ما</string>
+
+    <string name="msg_on_payment_complete">سوف يتم التأكد من وصول الحوالة و إعلام المعقب بذلك خلال فترة لا تتجاوز ساعتين</string>
+    <string name="tv_before_attachments">نرجو ارفاق صورة من ايصال التحويل</string>
+    <string name="tv_terms_of_services">شروط الخدمة</string>
+
+    <!--    <string name="tv_sp_note">اذا كنت معقب، بإمكانك قبول انجاز إحدى المعاملات المعروضة واذا كنت تبحث عن معقب لإنجاز معاملتك أضغط الزر لإضافة معاملةك</string>-->
+    <string name="tv_sp_note">اذا كنت معقب، بامكانك قبول انجاز احدى المعاملات المتوفرة واذا كنت تبحث عن معقب لانجاز معاملتك اضغط الزر لاضافة طلبك</string>
+
+
+    <string name="msg_card_has_been_deleted_successfully">تم حذف البطاقة بنجاح</string>
+    <string name="error_no_profile_pic_to_remove">لا تتوفر صورة ملف تعريف لإزالتها</string>
+    <string name="msg_remove_picture">هل تريد إزالة هذه الصورة.</string>
+    <string name="msg_image_removed_successfully">تمت إزالة الصورة بنجاح</string>
+    <string name="msg_provider_has_been_removed_from_favourite_successfully">تمت إزالة مقدم الخدمة من المفضلة</string>
+    <string name="msg_do_you_want_provider_favourite">هل تريد أن تجعل المفضلة لديك</string>
+    <string name="msg_no_profile_pic_available_to_remove">لا تتوفر صورة ملف تعريف لإزالتها</string>
+    <string name="msg_do_you_want_to_remove_this_picture">هل تريد إزالة هذه الصورة</string>
+    <string name="msg_mobile_already_exists">رقم الجوال موجود بالفعل مع حساب آخر</string>
+    <string name="msg_email_already_exists">عنوان البريد الإلكتروني موجود بالفعل مع حساب آخر</string>
+
+    <string name="msg_do_you_want_to_remove">هل تريد إزالته</string>
+    <string name="msg_from">من عند</string>
+    <string name="msg_favourite_list">قائمة المفضلة</string>
+    <string name="msg_do_you_want_to_make_this_call">هل تريد إجراء هذه المكالمة?</string>
+    <string name="msg_complain_successfully_recorded">تم إرسال إعتراضك بنجاح</string>
+    <string name="msg_your_order_has_been_re_submitted_successfully">تم إعادة إرسال طلبك بنجاح</string>
+    <string name="alert_select_category">اختر الفئة</string>
+    <string name="alert_select_services">اختر الخدمة</string>
+
+    <string name="msg_rejected_by"> مرفوض من طرف </string>
+    <string name="msg_submitted_by"> مقدم من </string>
+    <string name="msg_approved_on"> وافق على </string>
+
+    <string name="msg_dont_want_to_share_mobile_number"> لا تريد مشاركة رقم الجوال</string>
+    <string name="msg_quotation_rejected_successfully">تم رفض هذا الاقتباس من قبلك بنجاح.</string>
+    <string name="msg_quotation_reSubmitted_successfully">تم إلغاء معاملة بنجاح</string>
+    <string name="msg_match_wrong_otp">عزيزي العميل لقد ادخلت رقم خاطئ</string>
+    <string name="msg_request_sent_successfully_to_general_office">تم ارسال طلبك الى المكتب العام بنجاح</string>
+
+
+    <!--Payments-->   <!--Payments-->  <!--Payments-->  <!--Payments-->  <!--Payments-->  <!--Payments-->  <!--Payments-->  <!--Payments-->
+
+
+    <!-- we use different callback schemes here to avoid 'Open with' dialog,
+     the intent-filter for callback must be defined in the same activity which initiates the checkout
+     to properly handle onActivityResult -->
+    <string name="checkout_ui_callback_scheme">checkoutui</string>
+    <string name="payment_button_callback_scheme">paymentbutton</string>
+    <string name="custom_ui_callback_scheme">tameed.com.tameed</string>
+
+    <string name="checkout_ui_title">Ready-to-Use UI</string>
+    <string name="payment_button_title">Payment Button</string>
+    <string name="custom_ui_title">SDK &amp; Your Own UI</string>
+    <string name="checkout_immediately_with">الخروج على الفور مع</string>
+    <string name="sdk_version_number">mobile sdk v%s</string>
+    <string name="visa">VISA</string>
+
+    <string name="card_holder_hint">Card Holder</string>
+    <string name="card_number_hint">Card Number</string>
+    <string name="card_expiry_month_hint">MM</string>
+    <string name="card_expiry_year_hint">YY</string>
+    <string name="card_cvv_hint">CVV</string>
+
+    <string name="date_delimiter">/</string>
+
+    <string name="button_ok">حسنا</string>
+    <string name="button_cancel">إلغاء</string>
+    <string name="button_proceed_to_checkout">باشرالخروج من الفندق</string>
+    <string name="button_pay_now">ادفع الآن</string>
+
+    <string name="message_successful_payment">كانت الدفعة ناجحة</string>
+    <string name="message_unsuccessful_payment">"الدفع لم ينجح"</string>
+
+
+    <string name="message_payment_confirmation">%1$s %2$s سيتم تنفيذ دفع</string>
+
+    <string name="progress_message_please_wait">ارجوك انتظر…</string>
+    <string name="progress_message_checkout_id">الحصول على معرف الخروج …</string>
+    <string name="progress_message_checkout_info">الحصول على معلومات الخروج …</string>
+    <string name="progress_message_payment_status">الحصول على حالة الدفع …</string>
+    <string name="progress_message_processing_payment">معالجة الدفع…</string>
+
+    <string name="error_message">حدث خطأ</string>
+    <string name="error_empty_fields">جب ألا تكون الحقول فارغة</string>
+
+</resources>

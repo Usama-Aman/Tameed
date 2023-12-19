@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cart_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_sp_adapter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        cart_view:layout_constraintStart_toStartOf="parent"
+        cart_view:layout_constraintTop_toTopOf="parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/d_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            cart_view:layout_constraintStart_toStartOf="parent"
+            cart_view:layout_constraintTop_toTopOf="parent"
+            cart_view:srcCompat="@mipmap/no_thumb" />
+
+        <ImageView
+            android:id="@+id/sp_online_img"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="50dp"
+            cart_view:layout_constraintLeft_toLeftOf="parent"
+            cart_view:layout_constraintStart_toStartOf="@+id/d_image"
+            cart_view:layout_constraintTop_toTopOf="@+id/d_image"
+            cart_view:srcCompat="@mipmap/ic_online" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_service_provider_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="8dp"
+        cart_view:layout_constraintEnd_toStartOf="@+id/constraintLayout_call_chat_fav_distance"
+        cart_view:layout_constraintStart_toEndOf="@+id/constraintLayout_profile"
+        cart_view:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/d_sp_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Robert Downey JR."
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            cart_view:layout_constraintStart_toStartOf="parent"
+            cart_view:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_reviews"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+
+        android:layout_marginStart="8dp"
+        cart_view:layout_constraintStart_toEndOf="@+id/constraintLayout_profile"
+        cart_view:layout_constraintTop_toBottomOf="@+id/constraintLayout_service_provider_name">
+
+        <TextView
+            android:id="@+id/review_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="استعراضات"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            cart_view:layout_constraintStart_toStartOf="parent"
+            cart_view:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/d_star1"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginStart="5dp"
+            cart_view:layout_constraintStart_toEndOf="@+id/review_txt"
+            cart_view:layout_constraintTop_toTopOf="parent"
+            cart_view:srcCompat="@mipmap/star_active" />
+
+        <ImageView
+            android:id="@+id/d_star2"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginStart="0dp"
+            cart_view:layout_constraintStart_toEndOf="@+id/d_star1"
+            cart_view:srcCompat="@mipmap/star_active" />
+
+        <ImageView
+            android:id="@+id/d_star3"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginStart="0dp"
+            cart_view:layout_constraintStart_toEndOf="@+id/d_star2"
+            cart_view:srcCompat="@mipmap/star_active" />
+
+        <ImageView
+            android:id="@+id/d_star4"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginStart="0dp"
+            cart_view:layout_constraintStart_toEndOf="@+id/d_star3"
+            cart_view:srcCompat="@mipmap/star_active" />
+
+        <ImageView
+            android:id="@+id/d_star5"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            cart_view:layout_constraintStart_toEndOf="@+id/d_star4"
+            cart_view:layout_constraintTop_toTopOf="parent"
+            cart_view:srcCompat="@mipmap/star_inactive" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        cart_view:layout_constraintBottom_toTopOf="@+id/view1"
+        cart_view:layout_constraintEnd_toStartOf="@+id/constraintLayout_call_chat_fav_distance"
+        cart_view:layout_constraintStart_toEndOf="@+id/constraintLayout_profile"
+        cart_view:layout_constraintTop_toBottomOf="@+id/constraintLayout_reviews">
+
+        <TextView
+            android:id="@+id/d_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Services 1"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            cart_view:layout_constraintBottom_toBottomOf="parent"
+            cart_view:layout_constraintStart_toStartOf="parent"
+            cart_view:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_call_chat_fav_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        cart_view:layout_constraintBottom_toTopOf="@+id/view1"
+        cart_view:layout_constraintEnd_toEndOf="parent"
+        cart_view:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout_call_chat_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="68dp"
+            cart_view:layout_constraintEnd_toEndOf="parent"
+            cart_view:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                cart_view:layout_constraintEnd_toStartOf="@+id/constraintLayout_chat"
+                cart_view:layout_constraintStart_toStartOf="parent"
+                cart_view:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/sp_call"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    cart_view:layout_constraintBottom_toBottomOf="parent"
+                    cart_view:layout_constraintEnd_toEndOf="parent"
+                    cart_view:layout_constraintStart_toStartOf="parent"
+                    cart_view:layout_constraintTop_toTopOf="parent"
+                    cart_view:srcCompat="@mipmap/ic_call" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                cart_view:layout_constraintEnd_toStartOf="@+id/constraintLayout_favt"
+                cart_view:layout_constraintStart_toEndOf="@+id/constraintLayout_call"
+                cart_view:layout_constraintTop_toTopOf="parent">
+
+
+                <ImageView
+                    android:id="@+id/sp_chat"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginStart="2dp"
+                    cart_view:layout_constraintBottom_toBottomOf="parent"
+                    cart_view:layout_constraintEnd_toEndOf="parent"
+                    cart_view:layout_constraintStart_toStartOf="parent"
+                    cart_view:layout_constraintTop_toTopOf="parent"
+                    cart_view:srcCompat="@mipmap/ic_chat" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout_favt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                cart_view:layout_constraintEnd_toEndOf="parent"
+                cart_view:layout_constraintStart_toEndOf="@+id/constraintLayout_chat"
+                cart_view:layout_constraintTop_toTopOf="parent">
+
+
+                <ImageView
+                    android:id="@+id/sp_favourite"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="2dp"
+                    cart_view:layout_constraintBottom_toBottomOf="parent"
+                    cart_view:layout_constraintRight_toRightOf="parent"
+                    cart_view:layout_constraintStart_toStartOf="parent"
+                    cart_view:layout_constraintTop_toTopOf="parent"
+                    cart_view:srcCompat="@mipmap/ic_fav" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout_distance_forword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                cart_view:layout_constraintBottom_toBottomOf="parent"
+                cart_view:layout_constraintEnd_toEndOf="parent">
+
+                <ImageView
+                    android:id="@+id/home_frwd"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    cart_view:layout_constraintBottom_toBottomOf="parent"
+                    cart_view:layout_constraintEnd_toEndOf="parent"
+                    cart_view:srcCompat="@mipmap/ic_forward" />
+
+                <TextView
+                    android:id="@+id/d_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:text="20KM"
+                    android:textAllCaps="true"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp"
+                    cart_view:layout_constraintBottom_toBottomOf="parent"
+                    cart_view:layout_constraintEnd_toStartOf="@+id/home_frwd" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <!--    <TextView
+            android:id="@+id/service1_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Services 2"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            cart_view:layout_constraintBottom_toTopOf="@+id/view"
+            cart_view:layout_constraintStart_toEndOf="@+id/textView29" />-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#009788"
+        cart_view:layout_constraintBottom_toBottomOf="parent"
+        cart_view:layout_constraintEnd_toEndOf="parent"
+        cart_view:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <!-- <TextView
+         android:id="@+id/textView29"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="10dp"
+         android:text=","
+         android:textColor="@color/black"
+         android:textSize="20dp"
+         cart_view:layout_constraintBottom_toBottomOf="parent"
+         cart_view:layout_constraintStart_toEndOf="@+id/service2_txt" />
+ -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

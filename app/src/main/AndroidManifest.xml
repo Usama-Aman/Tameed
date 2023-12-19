@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="tameed.com.tameed">
+
+    <permission
+        android:name="tameed.com.tameed.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission
+        android:name="android.permission.WRITE_CONTACTS"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission
+        android:name="android.permission.READ_CONTACTS"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.koment.permission.MAPS_RECEIVE" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="tameed.com.tameed.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+
+    <application
+        android:name=".Util.AppController"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Splash_Screen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- <receiver
+             android:name="com.google.android.gcm.GCMBroadcastReceiver"
+             android:permission="com.google.android.c2dm.permission.SEND">
+             <intent-filter>
+
+                 &lt;!&ndash; Receives the actual messages. &ndash;&gt;
+                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                 &lt;!&ndash; Receives the registration id. &ndash;&gt;
+                 <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                 <category android:name="com.KimiacarePatient" />
+             </intent-filter>
+         </receiver>
+
+         <service android:name=".GCMIntentService" />
+
+ -->
+        <!-- FireBase Notifications -->
+        <service
+            android:name=".notifications.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- <service
+             android:name="notifications.MyFirebaseInstanceIDService"
+             android:enabled="true"
+             android:exported="true">
+             <intent-filter>
+                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+             </intent-filter>
+         </service>-->
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/maps_api_key" />
+
+
+        <activity
+            android:name=".profile"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="tameedapp.page.link"
+                    android:scheme="https" />
+                <data
+                    android:host="tameedapp.page.link"
+                    android:scheme="http" />
+
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".Contact_us"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Terms_Condition"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".My_account"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".About"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Payment_type"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Notification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".My_services"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cash_Report"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PreviewIamge"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sp_contact_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Order_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Complain_order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sort"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Paypal_WebView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Oder_detail_provider"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Order_detail_provider_accept"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PublicRoom"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FilterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Full_Screen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdvertisementActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".PaymentActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+
+                <data android:scheme="@string/custom_ui_callback_scheme" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".Map_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResentChat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Country_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MapView_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cities"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Search_ProvideService"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Resubmitt_DirectOrder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RatingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Chat_window"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DirectOrderDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SendPublicOrder"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".OrderSummary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OTP_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".P_room"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Search_by_city"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Review"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Customer_Payment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Payment_Detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Fragment.Favourite"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="7b24152fcd658162cbb1189466a45e3a43ec40c2" />
+
+
+        <service
+            android:name="com.oppwa.mobile.connect.service.ConnectService"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

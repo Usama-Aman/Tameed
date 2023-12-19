@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header_relative"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F5F5F5"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:id="@+id/back_relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/header_map_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/back_blue_img" />
+
+            <TextView
+                android:id="@+id/txt_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/header_map_back"
+                android:paddingStart="5dp"
+                android:text="الى الخلف"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/header_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="الموقع"
+            android:textColor="@color/Black"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/header_done_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:text="نهاء"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_relative"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/header_relative"
+        android:background="#D4D4D8">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toStartOf="@+id/search_cancel_txt"
+            android:background="@drawable/shape_white">
+
+            <EditText
+                android:id="@+id/editsearch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:drawableEnd="@drawable/bt_delete_blue_2x"
+                android:drawableStart="@drawable/header_search"
+                android:ellipsize="end"
+                android:hint="بحث"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="14dp" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/search_cancel_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:text="إلغاء"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_relative" />
+
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#02BEAB</color>
+    <color name="colorPrimaryDark">#00796A</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="light_green">#009788</color>
+
+    <color name="black">#000000</color>
+    <color name="lightGreen">#009788</color>
+
+    <color name="Blue">#1673FF</color>
+
+    <color name="Awaiting">#FF9900</color>
+    <color name="Accept">#82A84F</color>
+    <color name="Rejct">#FF0000</color>
+
+    <color name="Black">#000000</color>
+    <color name="White">#ffffff</color>
+    <color name="dark_blue">#0060A0</color>
+    <color name="dark_grey">#808080</color>
+    <color name="grey">#EAEAEA</color>
+    <color name="light_app_color">#77C7FF</color>
+    <color name="Grey_color">#999999</color>
+    <color name="dark_green">#029D09</color>
+    <color name="dark_red">#C60A11</color>
+    <color name="Light_Gray_white">#F4F4EF</color>
+    <color name="Grey">#9D9D9E</color>
+    <color name="Lightblack">#656364</color>
+    <color name="Light_Blue">#70b5eb</color>
+
+    <color name="piink">#FF4081</color>
+    <item name="green" type="color">#6FB524</item>
+    <item name="orange" type="color">#FFFFBB33</item>
+    <item name="darkpurple" type="color">#FF9933CC</item>
+    <color name="yellow">#e0da40</color>
+    <color name="red">#e15300</color>
+
+
+    <color name="trnsparet_90">#b3101010</color>
+    <color name="transparent">#00000000</color>
+    <!--<color name="bg_back_popup_field">#EEEEEE</color>-->
+    <color name="bg_back_popup_field">#FFFFFF</color>
+    <color name="bg_back_popup_field_of">#F8F8F8</color>
+    <color name="bg_back_popup_field_border">#C4C4C4</color>
+    <color name="bg_btn">#374155</color>
+
+</resources>
+
+
+

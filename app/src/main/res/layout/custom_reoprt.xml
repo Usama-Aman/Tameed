@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer"
+        android:textSize="18sp"
+        android:id="@+id/customer"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/Black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/customer"
+        android:background="@color/black"
+        android:id="@+id/view_customer"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Provider"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/view_customer"
+        android:id="@+id/provider"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/Black" />
+</RelativeLayout>

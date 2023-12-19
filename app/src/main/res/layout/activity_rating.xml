@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_rating"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/colorPrimaryDark">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_marginTop="70dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_tv1"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/White"
+                    android:textSize="25dp"
+                    android:text="شكرا لإستخدامك تطبيق تعميد"/>
+
+                <!-- <TextView
+                     android:id="@+id/txt_tv2"
+                     android:layout_gravity="center"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textColor="@color/White"
+                     android:textSize="20dp"
+                     android:text="with Tameed"/>-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <!--        <TextView
+                            android:id="@+id/txt_tv3"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:text="To Serve your better. We want your" />-->
+
+                <TextView
+                    android:id="@+id/txt_tv4"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:text="يمهنا تقيمك لمستوى الخدمة"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_tv5"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="قيم الخدمة"/>
+
+                <TextView
+                    android:id="@+id/txt_tv6"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    android:visibility="gone"
+                    android:text="Caesar Restaurent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+
+
+                <ImageView
+                    android:layout_marginEnd="5dp"
+                    android:id="@+id/congrat_star1"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/rate_white" />
+
+
+
+
+
+
+                <ImageView
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/congrat_star2"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/rate_white" />
+
+
+
+                <ImageView
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/congrat_star3"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/rate_white" />
+
+
+
+                <ImageView
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/congrat_star4"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/rate_white" />
+
+
+
+
+                <ImageView
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/congrat_star5"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/rate_white" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/Write_submit_txt"
+                    android:gravity="center"
+                    android:background="@mipmap/bt_grey1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="إرسال"
+                    android:textColor="@color/white"
+                    android:textStyle="normal"
+                    android:textAllCaps="false"
+                    android:textSize="25dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_tv7"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="سوف اقوم بذلك لاحقا"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
